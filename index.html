@@ -6,6 +6,7 @@
     <meta name="description" content="A lovely bakery in East Texas that serves cookies and cakes." />
     <title>Sally's Bakery</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="code.js" defer></script>
 </head>
 <header>
     <nav class="nav-bar">
@@ -18,6 +19,12 @@
     </nav>
 </header>
 <body>
+    <div id="sacrifices">
+        <h2>Perform a Sacrifice</h2>
+        <p>Number of sacrifices performed: <span id="sacrifices-count">246</span></p>
+        <p>Chance of summer rain: <span id="summer-rain-chance">0</span>%</p>
+        <button onclick="performSacrifice()">Perform Sacrifice</button>
+    </div>
     <div id="hero" class="hero-section">
         <h1>Sallys Bakery Best pastries in East Texas</h1>
         <picture>
