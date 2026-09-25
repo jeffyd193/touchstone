@@ -19,19 +19,14 @@
     </nav>
 </header>
 <body>
-    <div id="sacrifices">
-        <h2>Perform a Sacrifice</h2>
-        <p>Number of sacrifices performed: <span id="sacrifices-count">246</span></p>
-        <p>Chance of summer rain: <span id="summer-rain-chance">0</span>%</p>
-        <button onclick="performSacrifice()">Perform Sacrifice</button>
-    </div>
     <div id="hero" class="hero-section">
         <h1>Sallys Bakery Best pastries in East Texas</h1>
-        <picture>
-            <source media="(min-width: 1024px)" srcset="hero-large.jpg" />
-            <source media="(min-width: 640px)" srcset="hero-medium.jpg" />
-            <img src="hero-small.jpg" alt="Assorted pastries displayed at Sally's Bakery" />
-        </picture>
+        <div id="sacrifices">
+            <h2>Perform a Sacrifice</h2>
+            <p>Number of sacrifices performed: <span id="sacrifices-count">246</span></p>
+            <p>Chance of summer rain: <span id="summer-rain-chance">0</span>% on <span id="day-of-the-week"></span></p>
+            <button class="cta-button" onclick="performSacrifice()">Perform Sacrifice</button>
+        </div>
     </div>
     <div id="services" class="services-section">
         <h2>Services</h2>
