@@ -27,8 +27,6 @@ window.addEventListener('load', updateSacrificesDisplay);
 function performSacrifice() {
     sacrifices++;
     summerRainChance = Math.min(100, summerRainChance + 1);
-    console.log(`Sacrifices: ${sacrifices}`);
-    console.log(`Summer Rain Chance: ${summerRainChance}%`);
     localStorage.setItem('sacrifices', sacrifices);
     localStorage.setItem('summerRainChance', summerRainChance);
     updateSacrificesDisplay();
