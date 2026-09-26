@@ -6,6 +6,7 @@
     <meta name="description" content="A lovely bakery in East Texas that serves cookies and cakes." />
     <title>Sally's Bakery</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="code.js" defer></script>
 </head>
 <header>
     <nav class="nav-bar">
@@ -20,11 +21,16 @@
 <body>
     <div id="hero" class="hero-section">
         <h1>Sallys Bakery Best pastries in East Texas</h1>
-        <picture>
-            <source media="(min-width: 1024px)" srcset="hero-large.jpg" />
-            <source media="(min-width: 640px)" srcset="hero-medium.jpg" />
-            <img src="hero-small.jpg" alt="Assorted pastries displayed at Sally's Bakery" />
-        </picture>
+        <div id="sacrifices">
+            <h2>Perform a Sacrifice</h2>
+            <p>Gods you have added: <span id="gods-list"></span></p>
+            <input style="color: #000" type="text" id="god-name" placeholder="Enter god's name" />
+            <button class="cta-button" onclick="addGod(document.getElementById('god-name').value)">Add God</button>
+            <button class="cta-button" onclick="removeGod(document.getElementById('god-name').value)">Remove God</button>
+            <p>Number of sacrifices performed: <span id="sacrifices-count">246</span></p>
+            <p>Chance of summer rain: <span id="summer-rain-chance">0</span>% on <span id="day-of-the-week"></span></p>
+            <button class="cta-button" onclick="performSacrifice()">Perform Sacrifice</button>
+        </div>
     </div>
     <div id="services" class="services-section">
         <h2>Services</h2>
