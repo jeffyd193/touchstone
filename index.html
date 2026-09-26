@@ -23,6 +23,10 @@
         <h1>Sallys Bakery Best pastries in East Texas</h1>
         <div id="sacrifices">
             <h2>Perform a Sacrifice</h2>
+            <p>Gods you have added: <span id="gods-list"></span></p>
+            <input style="color: #000" type="text" id="god-name" placeholder="Enter god's name" />
+            <button class="cta-button" onclick="addGod(document.getElementById('god-name').value)">Add God</button>
+            <button class="cta-button" onclick="removeGod(document.getElementById('god-name').value)">Remove God</button>
             <p>Number of sacrifices performed: <span id="sacrifices-count">246</span></p>
             <p>Chance of summer rain: <span id="summer-rain-chance">0</span>% on <span id="day-of-the-week"></span></p>
             <button class="cta-button" onclick="performSacrifice()">Perform Sacrifice</button>
